@@ -14,7 +14,7 @@ if (!dir.exists(figDir)) {
     dir.create(figDir, recursive = TRUE)
 }
 
-.libPaths("lib")
+.libPaths("./lib")
 
 pacman::p_load(
     ISwR
@@ -23,7 +23,7 @@ pacman::p_load(
 jpeg(
     file = base::file.path(
         figDir,
-        base::paste(modelName, "-Plots001.jpg", sep = "")
+        base::paste(modelName, "-Fig.01.01.jpg", sep = "")
     )
 )
     plot(rnorm(500))

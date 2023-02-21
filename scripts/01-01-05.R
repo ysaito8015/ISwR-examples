@@ -1,6 +1,5 @@
 rm(list = ls())
 gc()
-source("01-01-03.R")
 
 scriptDir <- getwd()
 projectDir <- dirname(scriptDir)
@@ -14,12 +13,14 @@ if (!dir.exists(figDir)) {
     dir.create(figDir, recursive = TRUE)
 }
 
-.libPaths("lib")
+.libPaths("./lib")
 
 pacman::p_load(
     ISwR
 )
 
+weight <- c(60, 72, 57, 90, 95, 72)
+height <- c(1.75, 1.80, 1.65, 1.90, 1.74, 1.91)
 
 print("plot(height, weight)")
 cat("\n\n")

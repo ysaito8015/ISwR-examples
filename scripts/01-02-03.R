@@ -1,7 +1,7 @@
 rm(list = ls())
 gc()
 
-print('c("Huey", "Dewey", "Louie")')
+print("c(\"Huey\", \"Dewey\", \"Louie\")")
 c("Huey", "Dewey", "Louie")
 cat("\n\n")
 
