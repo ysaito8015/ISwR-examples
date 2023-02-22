@@ -1,0 +1,5 @@
+
+> ls(all = TRUE)
+character(0)
+
+> base::sink()
